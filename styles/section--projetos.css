@@ -1,0 +1,107 @@
+.section--projetos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+
+.section--projects__titulo {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  width: 300px;
+  height: 250px;
+  translate: -6px -6px; 
+  background: var(--backgroud--secundario);
+  border: 0.3rem solid var(--cor-preto);
+  box-shadow: 12px 12px 0 var(--cor-preto);
+  overflow: hidden;
+  transition: all 0.3s ease; 
+  /* não está suave por cauasa da aos */
+}
+
+.card-dois {
+  margin:15rem 0;
+}
+
+.head {
+  font-size: 1.4rem;
+  font-weight: 900;
+  width: 100%;
+  height: 3.2rem;
+  background: var(--branco-padrao);
+  padding: 5px 12px;
+  color: var(--cor-preto);
+  border-bottom: 3px solid var(--cor-preto);
+}
+
+.content {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--cor-paragrafo);
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: 3px solid var(--cor-preto);
+  box-shadow: 3px 3px 0 var(--cor-preto);
+  font-weight: 750;
+  background: var(--cor-roxo);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--branco-padrao);
+}
+
+.button-linear {
+  align-items: end;
+}
+
+.button:hover {
+  translate: 1.5px 1.5px;
+  box-shadow: 1.5px 1.5px 0 var(--cor-preto);
+  background: var(--cor-background);
+}
+
+.button:active {
+  translate: 3px 3px;
+  box-shadow: 0 0 0 var(--cor-preto);
+}
+
+.card:hover {
+  translate: -6px;
+}
+
+@media only screen and (max-width: 768px) {
+  .section--projetos {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    translate: 0;
+    box-shadow: 6px 6px 0 var(--cor-preto);
+  }
+
+  .card-dois {
+    margin: 0;
+  }
+
+  .card:hover {
+    translate: 0;
+  }
+}

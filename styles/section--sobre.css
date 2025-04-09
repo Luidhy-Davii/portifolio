@@ -1,0 +1,86 @@
+.section--sobre {
+  display: flex;
+  height: 70vh;
+  width: 70vw; 
+  align-items: center; 
+  justify-content: center; 
+  background-color: var(--cor-card);
+  border-radius: 1.2rem;
+  gap: 5rem; 
+  }
+
+.section--sobre__img {
+  width: 40%; 
+  max-width: 400px; 
+  height: auto; 
+  border-radius: 1.2rem; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.whapper--conteudo {
+  max-width: 50%; /* Limita a largura do conteúdo */
+}
+
+.whapper--conteudo__titulo {
+  font-size: 3rem;
+  color: var(--branco-padrao);
+  margin-bottom: 2rem;
+}
+
+.whapper--conteudo__paragrafo {
+  font-size: 1.8rem;
+  color: var(--cor-paragrafo);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.btn--cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--branco-padrao);
+  background-color: var(--cor-roxo);
+  border: 2px solid var(--cor-roxo);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.btn--cv:hover {
+  background-color: var(--cor-roxo-efeito);
+  transform: translateY(-2px);
+}
+
+.btn--cv:active {
+  transform: translateY(0);
+}
+
+.btn--cv i {
+  margin-right: 1rem;
+}
+
+/* Responsividade para telas menores que 768px */
+@media only screen and (max-width: 768px) {
+  .section--sobre {
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; 
+    text-align: center;
+    height: auto; /* Remove a altura fixa */
+    width: 90vw; /* Aumenta a largura para ocupar mais espaço */
+    gap: 2rem; 
+  }
+
+  .section--sobre__img {
+    width: 60%; /* Aumenta a largura da imagem */
+    order: 2; 
+    margin: 1rem 0; /* Adiciona um espaçamento acima e abaixo da imagem */
+  }
+
+  .whapper--conteudo {
+    max-width: 100%; /* O conteúdo ocupa toda a largura */
+  }
+}

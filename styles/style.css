@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /*fonte*/
+    --fonte: "Montserrat", arial, serif;
+    /*cores*/
+    --cor-backgroud: #16161a;
+    --backgroud--secundario: #242629;
+    --cor-roxo: #7f5af0;
+    --cor-roxo-efeito: #6c4ac2;
+    --cor-paragrafo: #94a1b2;
+    --cor-card: #242629;
+    --branco-padrao: #fffffe;
+    --cor-preto: #000001;
+    /* border-radius */
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    scrollbar-width: thin; /* Largura da barra de rolagem */
+    scrollbar-color: var(--cor-roxo) var(--cor-background); /* Cor do thumb e do track */
+}
+
+body {
+    color: var(--branco-padrao);
+    background-color: var(--cor-backgroud);
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: var(--fonte);
+    line-height: 1.;
+}
+
+/* container de toda a plicação*/
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }

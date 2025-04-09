@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of a Front-end Developer showcasing projects, skills, and contact information.">
+  <meta name="author" content="Luidhy Davi">
+  <meta property="og:title" content="Portifólio | Front-end Developer">
+  <meta property="og:description"
+    content="Portfolio of a Front-end Developer showcasing projects, skills, and contact information.">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/introduction.css">
+  <link rel="stylesheet" href="./styles/section--sobre.css">
+  <link rel="stylesheet" href="./styles/habilidades.css">
+  <link rel="stylesheet" href="./styles/section--projetos.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <!-- cdn bootsrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- cdn AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Portifólio | Front-end Developer</title>
+</head>
+
+<body>
+    <!-- Inicio cabecalho -->
+    <header class="cabecalho container" id="top">
+      <nav class="cabecalho--navegacao">
+        <h2 class="cabecalho--logo"><span>&lt;/</span>Ldy developer<span>&gt;</span></h2>
+        <div class="menu-toggle" id="mobile-menu" tabindex="0" aria-label="Abrir menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav--list">
+          <li><a href="#" class="nav--list__links" tabindex="0">Início</a></li>
+          <li><a href="#sobre" class="nav--list__links" tabindex="0">Sobre</a></li>
+          <li><a href="#habilidades" class="nav--list__links" tabindex="0">Habilidades</a></li>
+          <li><a href="#projetos" class="nav--list__links" tabindex="0">Projetos</a></li>
+          <li><a href="#contato" class="nav--list__links" tabindex="0">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Fim cabeçalho -->
+
+  <main>
+    <!-- sessao-um -->
+    <section class="section--introduction container" data-aos="fade-up">
+      <div class="introduction--text" data-aos="fade-right">
+        <h2 class="introduction--text__titulo">Olá, eu sou o <span class="name">Luidhy</span></h2>
+        <h2 class="introduction--text__subtitulo">Eu desenvolvo coisas<span class="exclamacao">!</span></h2>
+        <p class="introduction--text__paragrafo">Sou um Desenvolvedor Front-end! Apaixonado por criar interfaces
+          intuitivas e responsivas.</p>
+        <div class="wrapper--links">
+          <a href="https://github.com/Luidhy-Davii" class="whapper--links__github" tabindex="0" target="_blank" rel="noopener noreferrer">Github</a>  
+          <a href="https://www.linkedin.com/in/luidhydavi/" class="whapper--links__linkedin" tabindex="0" target="_blank" rel="noopener noreferrer">Linkedin</a>
+        </div>
+      </div>
+      <img src="./assets/undraw_programming_65t2-2.svg" alt="imagem de um homem usando o computador."
+        class="introduction--img__img">
+    </section>
+    <!-- fim sessao-um -->
+
+    <!-- sessao-dois -->
+    <section class="section--sobre container" id="sobre"  data-aos="fade-up">
+      <img src="./assets/eu.png" alt="Uma foto minha de braços cruazados." class="section--sobre__img" data-aos="fade-right">
+      <div class="whapper--conteudo" data-aos="fade-left">
+        <h2 class="whapper--conteudo__titulo">Sobre mim</h2>
+        <p class="whapper--conteudo__paragrafo">👋 Desenvolvedor Front-End apaixonado por criar interfaces intuitivas e
+          responsivas. Tenho experiência com HTML, CSS e JavaScript, além de trabalhar com pré-processadores e
+          frameworks como SASS, Bootstrap e Tailwind para otimizar a performance e a usabilidade dos projetos. Sempre em
+          busca de inovação e aprendizado para desenvolver experiências digitais modernas e eficientes.</p>
+        <a href="./assets/Luidhy Davi Alves de Lima att-2.pdf" download="Curriculo_Luidhy" class="btn--cv" tabindex="0" target="_blank">
+          <i class="bi bzi-download"></i> Baixar CV 
+        </a>
+      </div>
+    </section>
+    <!-- fim sessao-dois -->
+
+    <!-- inicio sessao tres -->
+    <section class="section--habilidades container" id="habilidades" data-aos="fade-up">
+      <h2 class="section--habilidades__titulo" data-aos="fade-down">Habilidades</h2>
+
+      <div class="habilidades--lista">
+        <div class="habilidade" data-descricao="Linguagem de marcação para estruturar páginas web.">
+          HTML
+          <i class="bi bi-filetype-html"></i>
+        </div>
+        <div class="habilidade" data-descricao="Linguagem de estilo para estilizar páginas web.">
+          CSS
+          <i class="bi bi-filetype-css"></i>
+        </div>
+        <div class="habilidade" data-descricao="Framework CSS para criar designs responsivos.">
+          Bootstrap
+          <i class="bi bi-bootstrap"></i>
+        </div>
+        <div class="habilidade" data-descricao="Pré-processador CSS para escrever estilos mais eficientes." >
+          SCSS
+          <i class="bi bi-filetype-scss"></i>
+        </div>
+        <div class="habilidade" data-descricao="Linguagem de programação para interatividade em páginas web.">
+          JavaScript
+          <i class="bi bi-filetype-js"></i>
+        </div>
+        <div class="habilidade" data-descricao="Linguagem de programação para desenvolvimento web e automação." >
+          Python
+          <i class="bi bi-filetype-py"></i>
+        </div>
+        <div class="habilidade" data-descricao="Linguagem de programação para desenvolvimento de aplicações robustas." >
+          Java
+          <i class="bi bi-filetype-java"></i>
+        </div>
+        <div class="habilidade" data-descricao="Sistema de gerenciamento de banco de dados relacional.">
+          Sql Server
+          <i class="bi bi-database"></i>
+        </div>
+        <div class="habilidade" data-descricao="Criação de animações e efeitos visuais com CSS." >
+          CSS animation
+          <i class="bi bi-magic"></i>
+        </div>
+        <div class="habilidade" data-descricao="Biblioteca JavaScript para criar partículas interativas." >
+          Particles.js
+          <i class="bi bi-stars"></i>
+        </div>
+        <div class="habilidade" data-descricao="Biblioteca JavaScript para animações de scroll.">
+          AOS.js
+          <i class="bi bi-arrow-down-square"></i>
+        </div>
+      </div>
+      <!-- div na qual o js usa para mostrar os textos -->
+      <div class="habilidade--descricao" id="descricaoHabilidade">
+      </div>
+    </section>
+    <!-- fim sessao-tres -->
+
+    <!-- sessão-quatro -->
+    <section class="whapper--projects" id="projetos">
+      <h2 class="section--projects__titulo" data-aos="fade-down">Projetos</h2>
+      <section class="section--projetos">
+        <!-- inicio-cards -->
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="head">Projeto 1</div>
+          <div class="content">
+            <p>Site de um Spa com HTML, CSS e SASS, utilizando o SASS para estilização avançada.</p>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="button">Acessar</a>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="head">Projeto 2</div>
+          <div class="content">
+            <p>Desenvolvimento de site com HTML, SASS e Vite para uma cafeteria, aplicando estilização avançada e organização modular.</p>
+            <br>
+            <br>
+            <a href="#" class="button">Acessar</a>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="head">Projeto 3</div>
+          <div class="content">
+            <p>Desenvolvimento de um site para petshop, utilizando HTML e CSS puro, com foco em layout atrativo. </p>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="button button-linear">Acessar</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--projetos card-dois">
+        <div class="card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="head">Projeto 4</div>
+          <div class="content">
+            <p>Um dos projetos acadêmicos para criar uma interface
+              onde o usuário pode inserir uma palavra ou frase para ser criptografada. Fiquei
+              responsável pelo desenvolvimento da interface, utilizando HTML e CSS.</p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="head">Projeto 2</div>
+          <div class="content">
+            <p>Desenvoolvi um site sobre Tecnologia da
+              Informação Verde, utilizando HTML, CSS e Bootstrap. Este foi meu primeiro projeto
+              acadêmico na faculdade, onde pude aplicar e aprimorar conceitos web.</p>
+          </div>
+        </div>
+
+        <!-- fim-cads -->
+      </section>
+    </section>
+    <!-- fim sessao-quatro -->
+
+    <footer class="footer" id="contato" data-aos="fade-up">
+      <div class="container"> 
+        <div class="footer-content"> 
+          <!-- Seção de Contato -->
+          <div class="footer--section" data-aos="fade-right">
+            <h3 class="footer--title">Contato</h3>
+            <ul class="footer--list">
+              <li>Email: ldydavi444@gmail.com</li>
+              <li>Telefone: (12) 99721-4948</li>
+              <li>Disponível para oportunidades.</li>
+            </ul>
+          </div>
+
+          <!-- Seção de Redes Sociais -->
+          <div class="footer--section" data-aos="fade-left">
+            <h3 class="footer--title">Redes sociais</h3>
+            <div class="social--icons">
+              <a href="https://github.com/Luidhy-Davii" class="social--link" rel="noopener noreferrer" target="_blank">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/luidhydavi/" class="social--link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://wa.me/12997214948" class="social--link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div> 
+      </div> 
+    </footer>
+
+    <!-- Link fixo para o topo -->
+    <a href="#top" id="scrollToTop" data-aos="fade-up">
+      <i class="bi bi-arrow-up"></i> <!-- Ícone de seta para cima -->
+    </a>
+  </main>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script/script.js">
+  </script>
+</body>
+
+</html>

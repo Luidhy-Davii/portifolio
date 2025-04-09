@@ -1,0 +1,76 @@
+/* Estilos para a seção de habilidades */
+.section--habilidades {
+    text-align: center;
+    min-height: 100vh; 
+    width: 100%;
+    padding: 2rem 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.section--habilidades__titulo {
+    font-size: 3rem;
+    color: var(--branco-padrao);
+    margin-bottom: 2rem; 
+}
+
+.habilidades--lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    max-width: 1200px; /* Limitar a largura máxima para melhor leitura */
+    margin: 0 auto; /* Centralizar a lista */
+}
+
+.habilidade {
+    background-color: var(--cor-roxo);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transform: translateY(0);
+}
+
+.habilidade:hover {
+    background-color: var(--cor-roxo-efeito);
+    transform: translateY(-5px) !important; /* Movimento no eixo Y */
+}
+
+.habilidade--descricao {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: var(--cor-paragrafo);
+    padding: 1rem;
+    background-color: var(--cor-header);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .habilidades--lista {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .habilidade {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .section--habilidades__titulo {
+        font-size: 2.5rem;
+    }
+}

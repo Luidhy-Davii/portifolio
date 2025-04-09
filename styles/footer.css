@@ -1,0 +1,79 @@
+
+  .footer {
+    padding: 2.2rem 0; 
+    border-top: 2px solid var(--cor-roxo);
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 2rem; 
+    padding-left: 12rem;
+  }
+
+  .footer--section {
+    flex: 1; /* Faz com que as seções ocupem o espaço disponível */
+    max-width: 300px;
+  }
+
+  .footer--title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--cor-roxo);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .footer--list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer--list li {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+  }
+
+  .footer--list li:hover {
+    color: var(--cor-roxo);
+  }
+
+  .social--icons {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .social--link {
+    color: var(--cor-texto);
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social--link:hover {
+    color: var(--cor-roxo);
+    transform: translateY(-5px);
+  }
+
+  /* Responsividade */
+  @media only screen and (max-width: 768px) {
+    .footer {
+      margin-top: 8rem;
+  }
+
+    .footer-content {
+      flex-direction: column; /* Coloca as seções uma abaixo da outra */
+      align-items: center; /* Centraliza o conteúdo */
+      text-align: center; /* Alinha o texto ao centro */
+      padding: 0;
+    }
+
+    .footer--section {
+      margin-bottom: 2rem; /* Espaço entre as seções */
+    }
+
+    .social--icons {
+      justify-content: center; /* Centraliza os ícones */
+    }
+  }

@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* estilizacao da link que leva para o topo*/
+#scrollToTop {
+  position: fixed; 
+  bottom: 55px;    
+  right: 50px;     
+  padding: 1rem;
+  background-color: var(--cor-roxo); 
+  color: var( --cor-preto); 
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTop:hover {
+  background: linear-gradient( to right,var(--cor-roxo), var(--cor-roxo-efeito));
+  transform: scale(1.1);
+  animation: pulse 1s infinite; /* Animação de pulsação */
+}
+
+.section--introduction {
+    display: flex;
+    height: calc(100vh - 58.5px);
+    margin-bottom: 5rem;
+  }
+  
+.introduction--text {
+    display: flex;    
+    flex-direction: column;
+    gap: .7rem;
+    justify-content: center;
+    padding-right: 12rem;
+}
+
+.introduction--img__img {
+    width: 40%;
+    transition: opacity 0.3s ease;
+}
+
+.introduction--img__img:hover {
+    opacity: 0.8; /* Reduz a opacidade para 80% */
+}
+
+.introduction--text__titulo {
+    font-size: 4.2rem;
+    font-weight: 500;
+}
+
+.introduction--text__subtitulo {
+    font-size: 3rem;
+    font-weight: 500    ;
+}
+
+.introduction--text__paragrafo {
+    font-size: 1.8rem;
+    color: var(--cor-paragrafo);   
+    margin-bottom: 2rem; 
+}
+
+.introduction--text__titulo .name,
+.introduction--text__subtitulo .exclamacao {
+    color: var(--cor-roxo);
+    font-weight: 600;
+  }
+
+/* Container dos links */
+.wrapper--links {
+    display: flex;
+    gap: 2rem; /* Espaço entre os botões */
+    margin-top: 2rem; /* Ajuste conforme necessário */
+  }
+  
+  /* Estilização igual para ambos os links */
+  .whapper--links__github, 
+  .whapper--links__linkedin {
+    display: inline-flex; /* Mudamos para flex para melhor alinhamento */
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--branco-padrao);
+    border: 3px solid var(--cor-roxo);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    min-width: 150px; /* Largura mínima igual para ambos */
+  }
+  
+  .whapper--links__linkedin {
+    background-color: var(--cor-roxo);
+    transition: background-color 0.3s ease; /* Transição suave */
+  }
+  
+  .whapper--links__linkedin:hover {
+    background-color: var(--cor-roxo-efeito); /* Cor diferente no hover */
+  }
+  
+  /* Efeito hover do GitHub (mantido do original) */
+  .whapper--links__github::before {
+    content: "";
+    position: absolute; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-roxo);
+    transform: translateX(-100%);
+    transition: all .5s;
+    z-index: -1;
+  }
+  
+  .whapper--links__github:hover::before {
+    transform: translateX(0);
+  } 
+
+  @media only screen and (max-width: 768px) {
+    .introduction--text  {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+    }   
+   
+    .introduction--img__img {
+        display: none;
+    }
+  }
+
