@@ -1,6 +1,6 @@
 
   .footer {
-    padding: 2.2rem 0; 
+    padding: 3rem 0; 
     border-top: 2px solid var(--cor-roxo);
   }
 
@@ -60,6 +60,7 @@
   @media only screen and (max-width: 768px) {
     .footer {
       margin-top: 8rem;
+      padding: 5rem 0;
   }
 
     .footer-content {
